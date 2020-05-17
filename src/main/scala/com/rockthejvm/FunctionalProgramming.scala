@@ -22,9 +22,9 @@ object FunctionalProgramming extends App {
   }
   println(simpleIncrementer(23))
 
-  // Example with a Function with 2 arguments and a String return type
+  // Example with a Function with 2 arguments and a String return type in a fancy way
 
-  val stringConcatenator = new Function2[String, String, String] {
+  val stringConcatenator = new ((String, String) => String) {
     def apply(arg1: String, arg2: String): String = arg1 + arg2
   }
   println(stringConcatenator("Hello", "Scala o-o" ))
