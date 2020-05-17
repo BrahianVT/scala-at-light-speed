@@ -58,9 +58,9 @@ object Basics extends App {
    factorial(1) = 1
   */
 
-  // As a typical functional programming , Here in Scala we don't use lopps
+  // As a typical functional programming , Here in Scala we don't use loops
 
-  // The "Unit" Type is equals to avoid
+  // The "Unit" Type is equals to void
 
   println("Hello World");
 
