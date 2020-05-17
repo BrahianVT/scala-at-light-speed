@@ -18,12 +18,13 @@ object OppScala extends App {
 
   // With Scala also you can implements inheritance
   class Dog(val name: String) extends Animal
+
   val dog = new Dog("Jack")
   println("  ## Calling method eat from sub class  ##")
   dog.eat()
   println(s"the dog's name: ${dog.name}")
 
-  // polimorphism
+  // polymorphism
   val dogAnimal: Animal  = new Dog("Im a dog")
   println("Example with polimorphism")
   dogAnimal.eat()
@@ -60,9 +61,9 @@ object OppScala extends App {
     override def eat(animal: Animal): Unit = println("I'm a dinosaur")
   }
   println("Example with a anonymous class")
-  dinosaur.eat(animal)
+  dinosaur eat animal
 
-  // curious in Scala operators are actually methods
+  // curiously in Scala operators are actually methods
   val basicAdd  = 1 + 1
   val basicAdd2 = 1.+(1)
   println(s"basicAdd2:  $basicAdd2")
@@ -74,7 +75,7 @@ object OppScala extends App {
     def apply(x: Int): Int = x + 1
   }
   println("Calling mySpecialMethod of MySingleton's object")
-  MySingleton.mySpecialMethod()
+  println(MySingleton.mySpecialMethod())
   println("Calling apply method of MySingleton's object")
   println(MySingleton.apply(69))
   println(MySingleton(69)) // equivalent with the declaration above
